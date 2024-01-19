@@ -18,17 +18,77 @@ body {
     overflow-x: hidden;
     margin: 0 auto;
     color: #1E1E1E;
-    background-color: #fff3e9;
+    background-color: #eeeeee;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
-        "header     header      header      header"
-        "main       main        main        main"
-        "main       main        main        main"
-        "footer     footer      footer      footer";
+        "header"
+        "main"
+        "footer";
 }
+
+header {
+    grid-area: header;
+    max-height: 13rem;
+    height: 100%;
+    width: 100%;
+    background-color: #90a6d0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0 0 10px 3px rgb(60, 73, 83);
+    z-index: 20;
+    padding: 2rem;
+    gap: 10rem;
+}
+
+.logotyp img {
+    width: 100%;
+}
+
+main {
+    grid-area: main;
+    margin: 13rem auto 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+main h1 {
+    background-color: #1E1E1E;
+    max-height: 6rem;
+    height: 100%;
+    color: white;
+    padding: 2rem;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*...............................Start sida...........................*/
+
+/*...............................Picture sida...........................*/
 
 .all-pictures-wrap {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem auto 3rem auto;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.column {
+    flex: 1;
+    min-width: 0;
+    max-width: 30rem;
+    width: 100%;
+}
+
+.all-pictures-wrap img {
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
 }

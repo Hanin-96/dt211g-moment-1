@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dt211g-Moment-1</title>
     <script src="js/main.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -13,7 +17,7 @@
 
         <div class="logotyp">
             <a href="index.html">
-                Moment 1
+                <img src="img/logotyp/moment-1.svg" alt="logotyp">
             </a>
         </div>
         <nav class="navbar">
@@ -39,38 +43,54 @@
         </nav>
     </header>
 
-    <h1>Syfte</h1>
-    <div class="all-pictures-wrap">
-        <picture>
-            <source srcset="img/malmo.jpg?as=webp&height=600" type="image/webp">
-            <img src="img/malmo.jpg" alt="Malmö Hyllie">
-        </picture>
+    <main>
+        <h1>Bilder</h1>
+        <div class="content-wrap all-pictures-wrap">
+            <div class="column">
+                <picture>
+                    <source srcset="img/malmo.jpg?as=webp&height=400&width=400" type="image/webp">
+                    <img src="img/malmo.jpg" alt="Malmö Hyllie">
+                </picture>
 
-        <picture>
-            <source srcset="img/helsingborg.jpg?as=webp&height=600" type="image/webp">
-            <img src="img/helsingborg.jpg" alt="Utsikt över Helsingborg">
-        </picture>
+                <picture>
+                    <source srcset="img/helsingborg.jpg?as=webp&height=400&width=400" type="image/webp">
+                    <img src="img/helsingborg.jpg" alt="Utsikt över Helsingborg">
+                </picture>
+            </div>
 
-        <picture>
-            <source srcset="img/kaseberga.jpg?as=webp&height=600" type="image/webp">
-            <img src="img/kaseberga.jpg" alt="Kåseberga">
-        </picture>
+            <div class="column">
+                <picture>
+                    <source srcset="img/kaseberga.jpg?as=webp&height=400&width=400" type="image/webp">
+                    <img src="img/kaseberga.jpg" alt="Kåseberga">
+                </picture>
 
-        <picture>
-            <source srcset="img/umea.jpg?as=webp&height=600" type="image/webp">
-            <img src="img/umea.jpg" alt="Umeå Nydalasjön">
-        </picture>
+                <picture>
+                    <source srcset="img/umea.jpg?as=webp&height=400&width=400" type="image/webp">
+                    <img src="img/umea.jpg" alt="Umeå Nydalasjön">
+                </picture>
+            </div>
 
-        <picture>
-            <source srcset="img/kopenhamn.jpg?as=webp&height=600" type="image/webp">
-            <img src="img/kopenhamn.jpg" alt="Utsikt över Köpenhamn ">
-        </picture>
-    </div>
+            <div class="column">
+                <picture>
+                    <source srcset="img/kopenhamn.jpg?as=webp&height=400&width=400" type="image/webp">
+                    <img src="img/kopenhamn.jpg" alt="Utsikt över Köpenhamn ">
+                </picture>
 
-    <p>Skapa en undersida i webbplatsen där du i detalj beskriver hur din arbetsprocess för utveckling och publicering fungerar.</p>
-    <p>Beskriv vad som är automatiserat och vilka verktyg du använt för detta.</p>
-    <p>hej</p>
-    <h2>hej</h2>
+                <picture>
+                    <source srcset="img/stockholm.jpg?as=webp&height=400&width=400" type="image/webp">
+                    <img src="img/stockholm.jpg" alt="stockholm ">
+                </picture>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>Hanin Farhan</li>
+            <li>DT2122g - Front-baserad webbutveckling</li>
+            <li>Moment 1 - Automatisering & Publicering</li>
+            <li>Webbutveckling - Mittuniversitet</li>
+        </ul>
+    </footer>
 
 </body>
 
