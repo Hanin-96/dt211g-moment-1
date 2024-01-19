@@ -12,11 +12,12 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     max-width: 1920px;
     overflow-x: hidden;
     margin: 0 auto;
+    padding: 0;
     color: #1E1E1E;
     background-color: #eeeeee;
     display: grid;
@@ -50,24 +51,48 @@ header {
 
 main {
     grid-area: main;
-    margin: 13rem auto 0 auto;
+    margin: 0 auto 0 auto;
+    margin-top: 13rem;
+    min-height: 80rem;
     height: 100%;
     width: 100%;
 }
 
 main h1 {
     background-color: #1E1E1E;
-    max-height: 6rem;
+    max-height: 8rem;
     height: 100%;
     color: white;
     padding: 2rem;
+    font-size: 3.6rem;
 }
 
 footer {
     grid-area: footer;
+    background-color: #1E1E1E;
+    color: white;
+    max-height: 15rem; 
+    height: 100%;
+    margin-top: 10rem;
+    grid-area: footer;
+    z-index: 1;
+    font-size: 1.2rem;
 }
 
 /*...............................Start sida...........................*/
+.text-wrap {
+    margin: 3rem auto 3rem auto;
+    padding: 2rem;
+    max-width: 55ch;
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+
+.text-wrap h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
 
 /*...............................Picture sida...........................*/
 
@@ -75,9 +100,9 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem auto 3rem auto;
     gap: 2rem;
-    padding: 2rem;
+    margin-top: 3rem;
+    padding: 0 2rem 0 2rem;
 }
 
 .column {
@@ -91,4 +116,31 @@ footer {
     display: block;
     margin-bottom: 2rem;
     width: 100%;
+}
+
+
+
+
+/*......................................Skärmbredd under 800px.......................................*/
+
+/*Pictures*/
+@media screen and (max-width:800px) {
+    .all-pictures-wrap {
+        display: block;
+    }
+
+    .column {
+        display: flex;
+        gap: 2rem;
+        max-width: unset;
+    }
+}
+
+
+/*Pictures*/
+@media screen and (max-width:500px) {
+
+    .column {
+        display: block;
+    }
 }
