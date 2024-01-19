@@ -46,7 +46,7 @@ header {
 }
 
 .logotyp img {
-    width: 100%;
+    width: 150%;
 }
 
 main {
@@ -77,6 +77,52 @@ footer {
     grid-area: footer;
     z-index: 1;
     font-size: 1.2rem;
+}
+
+/*...................Navbar meny....................*/
+nav {
+    width: 100vw;
+}
+
+.navbar {
+    height: 9rem;
+    display: flex;
+    justify-content: right;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    z-index: 5;
+}
+
+nav li,
+nav li a {
+    width: 100%;
+    padding: 0.1rem;
+    list-style: none;
+    text-decoration: none;
+    color: #1E1E1E;
+    font-size: 2rem;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.nav-link {
+    width: 100%;
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+
+.nav-item:hover {
+    width: 100%;
+    border-bottom: 2px solid #1E1E1E;
+}
+
+#active {
+    border-bottom: 2px solid #1E1E1E;
 }
 
 /*...............................Start sida...........................*/
