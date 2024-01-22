@@ -49,15 +49,20 @@
         <h1>Arbetsprocess</h1>
         <div class="text-wrap">
             <h2>Utveckling & publicering</h2>
-            <p>Skapa en undersida i webbplatsen där du i detalj beskriver hur din arbetsprocess för utveckling och publicering fungerar. Beskriv vad som är automatiserat och vilka verktyg du använt för detta.</p>
+            <h3>Start och utveckling</h3>
 
-            <br>
+            <p>Under arbetets gång har jag har jag skapat ett nytt npm projekt i terminalen för specifik arbetsmapp. Startade upp med kommandot "npm init". Därefter har parcel installerats i VSC via terminalen med kommando "npm install parcel --save-dev". Med save-dev talar om att parcel endast används under utveckling och inte publicering. En ny package.json fil skapas och i den läggs script till som talar om vad som ska startas och byggas. Lägger även till källfil för projektet Vissa mapper som dyker upp innehåller många filer som inte behöver versionshanteras, därför läggs dem in i en .gitignore fil som ser till att dem inte versionshanteras när arbetet kopplas till Github. </p>
 
-            <p>Under arbetets gång har jag har jag skapat ett nytt npm projekt i terminalen för specifik arbetsmapp. Startade upp med kommandot "npm init". Därefter har parcel installerats i VSC via terminalen med kommando "npm install parcel --save-dev". Med save-dev talar om att parcel endast används under utveckling och inte publicering. En ny package.json fil skapas och i den läggs script till som talar om vad som ska startas och byggas. Vissa mapper som dyker upp innehåller många filer som inte behöver versionshanteras, därför läggs dem in i en .gitignore fil som ser till att dem inte versionshanteras när arbetet kopplas till Github</p>
+            <p>Github kopplas med arbetet för att kunna commita uppdateringar av innehåll. Under arbetets gång skapas en ny develop branch för att lägga till nytt innehåll på webbsidorna som senare merges till main branch och pushas till webbsidorna. Detta görs för att hålla isär arbetsfiler från att direkt publiceras till webbsidorna.</p>
 
-            <p>Github kopplas med arbetet för att kunna commita uppdateringar av innehåll. Under arbetets gång skapas en ny develop branch för att lägga till nytt innehåll på webbsidorna som senare merges till main branch och pushas till webbsidorna</p>
+            <p>För att kunna se ändringar som görs under utvecklingen, skrivs kommandot "npm run start" som då startar upp en lokal server.</p>
 
-            <p>För att kunna se ändringar som görs, skrivs kommandot "npm run start" som startar upp en lokal server för att se ändringar som görs.</p>
+            <p>Efter bilder har lagts till i html filen, läggs en parameter till för att tala om vilken storlek och bildformat bilderna ska ha för bästa optimering när dem publiceras. En ny sharp paket läggs till i package.json fil. Dessutom skapar jag en ny konfigurationsfil där jag bestämmer kvalitén för att minska filstorleken på alla bilder i min fil.</p>
+
+            <p>För att transpilera Javascript till att fungera på så många webbläsare som möjligt, läggs browserslist till som tillägg i package.json</p>
+
+            <h3>Publicering</h3>
+            <p>Minifiering av Html, CSS och Javascript sköts av Parcel och görs när vi lägger till kommandot "npm run build" som bygger färdig version av allt och som resultat dyker en ny mapp upp som heter dist. Den innehåller publiceringsfiler, det betyder att vi har fått en kopia av källkodsfilerna som utvecklas under arbetet men som är färdiga för publicering och innehåller alla optimeringar av bild, minifiering och transpilering av filer.</p>
 
         </div>
     </main>
