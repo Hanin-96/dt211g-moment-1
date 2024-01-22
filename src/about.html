@@ -51,20 +51,24 @@
             <h2>Utveckling & publicering</h2>
             <h3>Start och utveckling</h3>
 
-            <p>Under arbetets gång har jag har jag skapat ett nytt npm projekt i terminalen för specifik arbetsmapp. Startade upp med kommandot "npm init". Därefter har parcel installerats i VSC via terminalen med kommando "npm install parcel --save-dev". Med save-dev talar om att parcel endast används under utveckling och inte publicering. En ny package.json fil skapas och i den läggs script till som talar om vad som ska startas och byggas. Lägger även till källfil för projektet Vissa mapper som dyker upp innehåller många filer som inte behöver versionshanteras, därför läggs dem in i en .gitignore fil som ser till att dem inte versionshanteras när arbetet kopplas till Github. </p>
+            <p>Under arbetets gång har jag har jag skapat ett nytt npm projekt i terminalen för specifik arbetsmapp. Startade upp med kommandot "npm init". Därefter har parcel installerats i VSC via terminalen med kommando "npm install parcel --save-dev". Med save-dev talar om att parcel endast används under utveckling och inte publicering. En ny package.json fil skapas och i den läggs script till som talar om vad som ska startas och byggas. Lägger även till källfil för projektet Vissa mapper som dyker upp innehåller många filer som inte behöver versionshanteras, därför läggs dem in i en .gitignore fil som ser till att dem inte versionshanteras när arbetet kopplas till Github.</p>
 
-            <p>Github kopplas med arbetet för att kunna commita uppdateringar av innehåll. Under arbetets gång skapas en ny develop branch för att lägga till nytt innehåll på webbsidorna som senare merges till main branch och pushas till webbsidorna. Detta görs för att hålla isär arbetsfiler från att direkt publiceras till webbsidorna.</p>
+            <p>Jag skapar en src mapp som innehåller alla källkodsfiler. Det är denna mappen som senare när allt ska byggas kopieras och skapar ny mapp som används för publicering.</p>
+
+            <h4>Github</h4>
+            <p>Github kopplas med arbetet för att kunna commita uppdateringar av innehåll. Under arbetets gång skapas en ny develop branch för att lägga till nytt innehåll på webbsidorna som senare merges till main branch och pushas till webbsidorna. Detta görs för att hålla isär arbetsfiler från att direkt publiceras till webbsidorna. Github kopplas ihop med netlify för att kunna hosta och publicera webbplatsen på internet</p>
 
             <p>För att kunna se ändringar som görs under utvecklingen, skrivs kommandot "npm run start" som då startar upp en lokal server.</p>
 
+            <h4>Automatisering</h4>
             <p>Efter bilder har lagts till i html filen, läggs en parameter till för att tala om vilken storlek och bildformat bilderna ska ha för bästa optimering när dem publiceras. En ny sharp paket läggs till i package.json fil. Dessutom skapar jag en ny konfigurationsfil där jag bestämmer kvalitén för att minska filstorleken på alla bilder i min fil.</p>
 
-            <p>För att transpilera Javascript till att fungera på så många webbläsare som möjligt, läggs browserslist till som tillägg i package.json</p>
+            <p>För att transpilera Javascript till att fungera på så många webbläsare som möjligt, läggs browserslist till som tillägg i package.json.</p>
 
             <h3>Publicering</h3>
-            <p>Minifiering av Html, CSS och Javascript sköts av Parcel och görs när vi lägger till kommandot "npm run build" som bygger färdig version av allt och som resultat dyker en ny mapp upp som heter dist. Den innehåller publiceringsfiler, det betyder att vi har fått en kopia av källkodsfilerna som utvecklas under arbetet men som är färdiga för publicering och innehåller alla optimeringar av bild, minifiering och transpilering av filer.</p>
-
+            <p>Minifiering av Html, CSS och Javascript sköts av Parcel och görs när vi lägger till kommandot "npm run build" som bygger färdig version av allt och som resultat dyker en ny mapp upp som heter dist. Den innehåller publiceringsfiler, det betyder att vi har fått en kopia av källkodsfilerna som utvecklas under arbetet. Skillnaden är att de är färdiga för publicering och innehåller alla optimeringar av bilder, minifiering och transpilering av filer. Vid en commit push, ska allt innehåll läggas till i Github och därefter publiceras i Netlify.</p>
         </div>
+
     </main>
     <footer>
         <ul>

@@ -137,6 +137,10 @@ nav li a {
     border-bottom: 0.3rem solid #1E1E1E;
 }
 
+p {
+    margin: 1rem 0 3rem 0;
+}
+
 /*Meny text och hamburgarmeny*/
 
 /*.................Hamburgarmeny...............*/
