@@ -56,9 +56,9 @@
             <p>Jag skapar en src mapp som innehåller alla källkodsfiler. Det är denna mapp som senare när allt ska byggas, kopieras och skapar ny mapp som används för publicering.</p>
 
             <h4>Github</h4>
-            <p>Github kopplas med arbetet för att kunna commita uppdateringar av innehåll. Under arbetets gång skapas en ny develop branch för att lägga till nytt innehåll på webbsidorna som senare merges till main branch och pushas till webbsidorna. Detta görs för att hålla isär arbetsfiler från att direkt publiceras till webbsidorna. Github kopplas ihop med netlify för att kunna hosta och publicera webbplatsen på internet</p>
+            <p>Github kopplas med arbetet för att kunna commita uppdateringar av innehåll. Under arbetets gång skapas en ny develop branch för att lägga till nytt innehåll på webbsidorna som senare merges till main branch och pushas till webbsidorna. Detta görs för att hålla isär arbetsfiler från att direkt publiceras till webbsidorna. Github kopplas ihop med netlify för att kunna hosta och publicera webbplatsen på internet. I Netlify väljer jag specifik repo från Github som ska publiceras och ser över att jag har rätt inställningar innan jag klickar på deploy.</p>
 
-            <p>För att kunna se ändringar som görs under utvecklingen, skrivs kommandot "npm run start" som då startar upp en lokal server.</p>
+            <p>För att kunna se ändringar i VSC som görs under utvecklingen, skrivs kommandot "npm run start" som då startar upp en lokal server.</p>
 
             <h4>Automatisering</h4>
             <p>Efter bilder har lagts till i html filen, läggs en parameter till för att tala om vilken storlek och bildformat bilderna ska ha för bästa optimering när dem publiceras. En ny sharp paket läggs till i package.json fil. Dessutom skapar jag en ny konfigurationsfil där jag bestämmer kvalitén för att minska filstorleken på alla bilder i min fil.</p>
