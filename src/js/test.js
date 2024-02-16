@@ -1,5 +1,9 @@
 "use strict"
 
-const testEl = "Test";
+let clickBtn = document.getElementById('img-click');
+let imageRotate = document.getElementById('img-rotate');
 
-console.log(testEl);
+
+clickBtn.addEventListener('click', () => {
+    imageRotate.classList.toggle('rotate');
+});

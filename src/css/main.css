@@ -10,6 +10,11 @@ html {
 
 /*Grund inställningar på sidans innehåll*/
 
+.rotate {
+    transition: transform 2s ease-in-out;
+    transform: rotate(360deg) rotate3d(1, 0, 0, 180deg);
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     height: 100%;
@@ -140,6 +145,8 @@ nav li a {
 p {
     margin: 1rem 0 3rem 0;
 }
+
+
 
 /*Meny text och hamburgarmeny*/
 
