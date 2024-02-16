@@ -1,0 +1,1 @@
+Uppgiften går ut på att automatisera och förenkla skapandet av en webbplats med hjälp av Node js. Under utvecklingen används verktyget Parcel för att  kompilera, packa och hantera resurser för webbutveckling. Webbplatsen publiceras i hostningstjänsten Netlify, som kan integreras med Github.
